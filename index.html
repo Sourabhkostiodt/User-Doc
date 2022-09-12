@@ -186,7 +186,7 @@
         <p class="lead">Follow all are our apis which is associate with azure functions triggers:</p>
         <ol>
           <li>Start apis with base url currently here our <i>base url</i>  <strong>https://streetleaf.azurewebsites.net</strong> after the base url we are using <b>api</b> prefix .</li>
-          <li>after base_url & prefix we are using AZURE Function trigger name for example <code>StreetleafLogin</code> this trigger for login users  :
+          <li>after base_url & prefix we are using AZURE Function trigger name for example <code>Login</code> this trigger for login users  :
           <ul>
     <li><code>base_url/api/trigger</code> - Contains all of the assets referenced
       <ul>
@@ -344,7 +344,7 @@
         <h2>Streetleaf Login</h2>
         <p>In Azure trigger are method where we and write a code and write our development logic's to implement & GET ,POST our data using it . <a class="ml-1" target="_blank" href="https://docs.microsoft.com/en-us/azure/azure-functions/functions-triggers-bindings?tabs=csharp"><i class="fas fa-external-link-alt"></i> Azure trigger</a></p>
         <p>Using this trigger we get access to token for get all api data .</p>
-        <p><li><code>base_url/api/StreetleafLogin?name=<code> First Name </code>&password=<code> password </code></code> - Login Users </li></p>
+        <p><li><code>base_url/api/Login?name=<code> First Name </code>&password=<code> password </code></code> - Login Users </li></p>
         <pre><code class="html">JSON RESPONSE
          
           
@@ -354,7 +354,7 @@
                     "FirstName": "<code> User Name </code>",
                     "Token": "<code> Token Key </code>",
                     "Code": "200",
-                    "Status": "Logged in Successfully. Please Use this token for rest of data"
+                    "Status": "Logged in Successfully. Please use this token for rest of data"
                 }
             ]
 
