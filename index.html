@@ -113,8 +113,8 @@
     <li class="nav-item"><a class="nav-link" href="#idocs_sidebar">Projects Details</a></li>
     <li class="nav-item"><a class="nav-link" href="#idocs_box_layout">Poles Details</a></li>
     <li class="nav-item"><a class="nav-link" href="#idocs_box_layout2">Poles list</a></li>
-    <li class="nav-item"><a class="nav-link" href="#idocs_footer">Single Pole Model</a></li>
-    <li class="nav-item"><a class="nav-link" href="#idocs_box_layout1">All Current Readings</a></li>
+    <li class="nav-item"><a class="nav-link" href="#idocs_footer">Pole Model</a></li>
+    <li class="nav-item"><a class="nav-link" href="#idocs_box_layout1"> Current Readings</a></li>
         </ul>
       </li>
       <!-- <li class="nav-item"><a class="nav-link" href="#idocs_content">Azure</a>
@@ -196,7 +196,7 @@
               <li><code>base_url/api/GetPolesList</code> - Pole List</li>
               <li><code>base_url/api/GetPoleModel</code> – Single Pole Model.</li>
               <li><code>base_url/api/GetCurrentReadings</code> - All Current Readings</li>
-              <li><code>base_url/api/GetPolesDetails</code> –  Poles Details.</li>
+              <li><code>base_url/api/GetPoleDetails</code> –  Poles Details.</li>
             </ul>
     </li>
     <li><code>base_url/api</code> - <a href="https://streetleaf.azurewebsites.net">Homepage</a>
@@ -441,7 +441,7 @@
         <h2>Get Poles Details</h2>
         <p>In Azure trigger are method where we and write a code and write our development logic's to implement & GET ,POST our data using it . <a class="ml-1" target="_blank" href="https://docs.microsoft.com/en-us/azure/azure-functions/functions-triggers-bindings?tabs=csharp"><i class="fas fa-external-link-alt"></i> Azure trigger</a></p>
         <p>Using this trigger we get access to token for get all api data .</p>
-        <p><li><code>base_url/api/GetPolesDetails?PoleId=<code>Project Id</code>&token=<code>Token key</code></code> - Get Project Single Project according to User's  </li></p>
+        <p><li><code>base_url/api/GetPoleDetails?PoleId=<code>Project Id</code>&token=<code>Token key</code></code> - Get Project Single Project according to User's  </li></p>
         <pre><code class="html">JSON RESPONSE
          
           
@@ -506,7 +506,7 @@
     <h2>Single Pole Model</h2>
     <p>In Azure trigger are method where we and write a code and write our development logic's to implement & GET ,POST our data using it . <a class="ml-1" target="_blank" href="https://docs.microsoft.com/en-us/azure/azure-functions/functions-triggers-bindings?tabs=csharp"><i class="fas fa-external-link-alt"></i> Azure trigger</a></p>
         <p>Using this trigger we get access to token for get all api data .</p>
-        <p><li><code>base_url/api/GetSinglePoleModel?ModelName=<code>Model Name</code> </code>- Get Readings Project according to User's  </li></p>
+        <p><li><code>base_url/api/GetPoleModel?ModelName=<code>Model Name</code> </code>- Get Readings Project according to User's  </li></p>
         <pre><code class="html">JSON RESPONSE
          
     [
@@ -534,7 +534,7 @@
     <h2>Get All Current Readings</h2>
     <p>In Azure trigger are method where we and write a code and write our development logic's to implement & GET ,POST our data using it . <a class="ml-1" target="_blank" href="https://docs.microsoft.com/en-us/azure/azure-functions/functions-triggers-bindings?tabs=csharp"><i class="fas fa-external-link-alt"></i> Azure trigger</a></p>
         <p>Using this trigger we get access to token for get all api data .</p>
-        <p><li><code>base_url/api/GetAllCurrentReadings?PoleIDKey=<code>Pole ID Key</code>&token=<code>Token key</code></code> - Get Readings Project according to User's  </li></p>
+        <p><li><code>base_url/api/GetCurrentReadings?PoleIDKey=<code>Pole ID Key</code>&token=<code>Token key</code></code> - Get Readings Project according to User's  </li></p>
         <pre><code class="html">JSON RESPONSE
          
     [
