@@ -1975,11 +1975,11 @@ hr {
 }
 
 .nav:not(.nav-pills) .nav-item .nav-link.active, .nav:not(.nav-pills) .nav-item .nav-link:hover {
-  color: #0366d6;
+  color: #00b1ae;
 }
 
 .nav-pills .nav-link:not(.active):hover {
-  color: #0366d6;
+  color: #00b1ae;
 }
 
 .nav-pills .nav-link.active, .nav-pills.nav-light .nav-link.active, .nav-pills .show > .nav-link {
