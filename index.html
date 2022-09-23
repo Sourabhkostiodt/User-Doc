@@ -601,7 +601,7 @@
   <section id="idocs_footer">
     <h2>Light Model</h2>
     <p>The GetPoleModel API allows users to retrieve hardware information based on the model details</p>
-        <code>base_url/api/GetPoleModel?ModelName=<code>Model Name</code>  &token=<code>Token key</code>
+        
        <table class="table table-bordered">
 					  <thead class="thead-dark">
 					    <tr>
@@ -622,7 +622,7 @@
        </table>
 						  
         <h5>Example:</h5> <br>
-        <h6>Input:  <a href="https://streetleaf.azurewebsites.net/api/GetPolesList?Projectid=projectid&token=token">https://streetleaf.azurewebsites.net/api/GetPolesList?Projectid=projectid&token=token</a></h6>
+        <h6>Input:  <a href="https://streetleaf.azurewebsites.net/api/GetPoleModel?ModelName=modelname&token=token">https://streetleaf.azurewebsites.net/api/GetPoleModel?ModelName=modelname&token=token</a></h6>
         
           <h6>Return :</h6>
         <pre><code class="html">JSON RESPONSE
@@ -649,10 +649,34 @@
   <!-- Box Layout Style
   ============================ -->
   <section id="idocs_box_layout1">
-    <h2>Single Current Readings</h2>
-    <p>In Azure trigger are method where we and write a code and write our development logic's to implement & GET ,POST our data using it . <a class="ml-1" target="_blank" href="https://docs.microsoft.com/en-us/azure/azure-functions/functions-triggers-bindings?tabs=csharp"><i class="fas fa-external-link-alt"></i> Azure trigger</a></p>
-        <p>Using this trigger we get access to token for get all api data .</p>
-        <p><li><code>base_url/api/GetCurrentReadings?PoleIDKey=<code>Pole ID Key</code>&token=<code>Token key</code></code> - Get Readings Project according to User's  </li></p>
+    <h2>Live Current Readings For based on Pole ID Key</h2>
+    <p>The GetCurrentReadings API allows users to retrieve the list of  most recent performance information of a lights on a Pole ID Key basis.</p>
+	
+       
+	  
+	  <table class="table table-bordered">
+					  <thead class="thead-dark">
+					    <tr>
+					      <th scope="col">Function</th>
+					      <th scope="col">Input </th>
+					      <th scope="col">Return</th>
+					    </tr>
+					  </thead>
+					  <tbody>
+					    <tr>
+					      <td><code>base_url/api/GetCurrentReadings?PoleIDKey=Pole ID Key&token=Token key</code></td>
+						    <td>Pole ID Key,</br>
+							token
+						</td>
+					      <td>Current readings of poles from Pole ID Key</td>
+					    </tr>
+            </tbody>
+       </table>
+						  
+        <h5>Example:</h5> <br>
+        <h6>Input:  <a href="https://streetleaf.azurewebsites.net/api/GetCurrentReadings?PoleIDKey=Poleidkey&token=token">https://streetleaf.azurewebsites.net/api/GetCurrentReadings?PoleIDKey=Poleidkey&token=token</a></h6>
+        
+          <h6>Return :</h6>
         <pre><code class="html">JSON RESPONSE
          
     [
@@ -681,15 +705,38 @@
 
 <hr class="divider">
 	    <section id="idocs_box_layout3">
-      <h2>Get All Current Readings</h2>
-      <p>In Azure trigger are method where we and write a code and write our development logic's to implement & GET ,POST our data using it . <a class="ml-1" target="_blank" href="https://docs.microsoft.com/en-us/azure/azure-functions/functions-triggers-bindings?tabs=csharp"><i class="fas fa-external-link-alt"></i> Azure trigger</a></p>
-          <p>Using this trigger we get access to token for get all api data .</p>
-          <p><li><code>base_url/api/GetCurrentReadingsForAllPoles?Projectid=<code>Product Id</code>&token=<code>Token key</code></code> - Get Readings Project according to User's  </li></p>
+      <h2>Live Data</h2>
+      <p>The GetCurrentReadings API allows users to retrieve the list of all most recent performance information of all the lights on a project basis.
+</p>
+		   
+           <table class="table table-bordered">
+					  <thead class="thead-dark">
+					    <tr>
+					      <th scope="col">Function</th>
+					      <th scope="col">Input </th>
+					      <th scope="col">Return</th>
+					    </tr>
+					  </thead>
+					  <tbody>
+					    <tr>
+					      <td><code>base_url/api/GetCurrentReadingsForAllPoles?Projectid=Product Id>&token=Token key</code></td>
+						    <td>Project ID ,</br>
+							token
+						</td>
+					      <td>All Current readings of poles from Project ID</td>
+					    </tr>
+            </tbody>
+       </table>
+						  
+        <h5>Example:</h5> <br>
+        <h6>Input:  <a href="https://streetleaf.azurewebsites.net/api/getcurrentreadingsforallpoles?Projectid=Projectid&token=token">https://streetleaf.azurewebsites.net/api/getcurrentreadingsforallpoles?Projectid=Projectid&token=token</a></h6>
+        
+          <h6>Return :</h6>
           <pre><code class="html">JSON RESPONSE
            
      [
 		    {
-			"PoleId": "12057-2853234729",
+			"PoleId": "<code> Pole ID </code>",
 			"ReadingDate": "2022-09-22",
 			"ReadingTime": 7,
 			"CurrentBatteryPer": 73.5,
@@ -705,7 +752,7 @@
 			"batteryElecCurrent2": 100.0
 		    },
 		    {
-			"PoleId": "12057-2846634708",
+			"PoleId": "<code> Pole ID </code>",
 			"ReadingDate": "2022-09-22",
 			"ReadingTime": 7,
 			"CurrentBatteryPer": 22.0,
