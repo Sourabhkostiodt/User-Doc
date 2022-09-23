@@ -428,10 +428,32 @@
   <!-- Sidebar
   ============================ -->
       <section id="idocs_sidebar">
-        <h2>Get Projects Details</h2>
-        <p>In Azure trigger are method where we and write a code and write our development logic's to implement & GET ,POST our data using it . <a class="ml-1" target="_blank" href="https://docs.microsoft.com/en-us/azure/azure-functions/functions-triggers-bindings?tabs=csharp"><i class="fas fa-external-link-alt"></i> Azure trigger</a></p>
-        <p>Using this trigger we get access to token for get all api data .</p>
-        <p><li><code>base_url/api/GetProjectsDetails?Projectid=<code>Project Id</code>&token=<code>Token key</code></code> - Get Project Single Project according to User's  </li></p>
+        <h2>Project Details</h2>
+        <p>The GetProjectDetails API allows users to retrieve details of a specific project.</p>
+        <table class="table table-bordered">
+					  <thead class="thead-dark">
+					    <tr>
+					      <th scope="col">Function</th>
+					      <th scope="col">Input </th>
+					      <th scope="col">Return</th>
+					    </tr>
+					  </thead>
+					  <tbody>
+					    <tr>
+					      <td><code>base_url/api/GetProjectsDetails?Projectid=Project Id&token=Token key</code></td>
+						    <td>Project ID,</br>
+							token
+						</td>
+					      <td>Returns Details of Specific Project</td>
+					    </tr>
+            </tbody>
+       </table>
+						  
+        <h5>Example:</h5> <br>
+        <h6>Input:  <a href="https://streetleaf.azurewebsites.net/api/GetProjectDetails?Projectid=projectid &token=token">hhttps://streetleaf.azurewebsites.net/api/GetProjectDetails?Projectid=projectid &token=token</a></h6>
+        
+          <h6>Return :</h6>
+        
         <pre><code class="html">JSON RESPONSE
          
           
@@ -469,10 +491,31 @@
   <!-- Box Layout Style
   ============================ -->
       <section id="idocs_box_layout">
-        <h2>Get Poles Details</h2>
-        <p>In Azure trigger are method where we and write a code and write our development logic's to implement & GET ,POST our data using it . <a class="ml-1" target="_blank" href="https://docs.microsoft.com/en-us/azure/azure-functions/functions-triggers-bindings?tabs=csharp"><i class="fas fa-external-link-alt"></i> Azure trigger</a></p>
-        <p>Using this trigger we get access to token for get all api data .</p>
-        <p><li><code>base_url/api/GetPoleDetails?PoleId=<code>Project Id</code>&token=<code>Token key</code></code> - Get Project Single Project according to User's  </li></p>
+        <h2>Get Pole Details</h2>
+        <p>The GetPolesList API allows users to retrieve the list of all poles and relative GPS coordinates of a specific Project based on Project ID.</p>
+        <table class="table table-bordered">
+					  <thead class="thead-dark">
+					    <tr>
+					      <th scope="col">Function</th>
+					      <th scope="col">Input </th>
+					      <th scope="col">Return</th>
+					    </tr>
+					  </thead>
+					  <tbody>
+					    <tr>
+					      <td><code>base_url/api/GetPoleDetails?PoleId=Pole Id&token=Token</code></td>
+						    <td>Pole ID,</br>
+							token
+						</td>
+					      <td>All Static Information of “Pole Number”</td>
+					    </tr>
+            </tbody>
+       </table>
+						  
+        <h5>Example:</h5> <br>
+        <h6>Input:  <a href="https://streetleaf.azurewebsites.net/api/GetPoleDetails?PoleId=Poleid&token=token">https://streetleaf.azurewebsites.net/api/GetPoleDetails?PoleId=Poleid&token=token</a></h6>
+        
+          <h6>Return :</h6>
         <pre><code class="html">JSON RESPONSE
          
           
@@ -504,10 +547,32 @@
   <!-- Box Layout Style
   ============================ -->
   <section id="idocs_box_layout2">
-    <h2>Get Poles list</h2>
-    <p>In Azure trigger are method where we and write a code and write our development logic's to implement & GET ,POST our data using it . <a class="ml-1" target="_blank" href="https://docs.microsoft.com/en-us/azure/azure-functions/functions-triggers-bindings?tabs=csharp"><i class="fas fa-external-link-alt"></i> Azure trigger</a></p>
-        <p>Using this trigger we get access to token for get all api data .</p>
-        <p><li><code>base_url/api/GetPolesList?Projectid=<code>Project Id</code>&token=<code>Token key</code></code> - Get Project Single Project according to User's  </li></p>
+    <h2>List of Poles Based on Project</h2>
+    <p>The GetPolesList API allows users to retrieve the list of all poles and relative GPS coordinates of a specific Project based on Project ID.</p>
+        
+	   <table class="table table-bordered">
+					  <thead class="thead-dark">
+					    <tr>
+					      <th scope="col">Function</th>
+					      <th scope="col">Input </th>
+					      <th scope="col">Return</th>
+					    </tr>
+					  </thead>
+					  <tbody>
+					    <tr>
+					      <td><code>base_url/api/GetPolesList?Projectid=Project Id&token=Token</code></td>
+						    <td>Project ID,</br>
+							token
+						</td>
+					      <td>Return List of Poles relative to the project</td>
+					    </tr>
+            </tbody>
+       </table>
+						  
+        <h5>Example:</h5> <br>
+        <h6>Input:  <a href="https://streetleaf.azurewebsites.net/api/GetPolesList?Projectid=projectid&token=token">https://streetleaf.azurewebsites.net/api/GetPolesList?Projectid=projectid&token=token</a></h6>
+        
+          <h6>Return :</h6>
         <pre><code class="html">JSON RESPONSE
          
           
@@ -534,10 +599,32 @@
   <!-- Box Layout Style
   ============================ -->
   <section id="idocs_footer">
-    <h2>Single Pole Model</h2>
-    <p>In Azure trigger are method where we and write a code and write our development logic's to implement & GET ,POST our data using it . <a class="ml-1" target="_blank" href="https://docs.microsoft.com/en-us/azure/azure-functions/functions-triggers-bindings?tabs=csharp"><i class="fas fa-external-link-alt"></i> Azure trigger</a></p>
-        <p>Using this trigger we get access to token for get all api data .</p>
-        <p><li><code>base_url/api/GetPoleModel?ModelName=<code>Model Name</code>  &token=<code>Token key</code></code>- Get Readings Project according to User's  </li></p>
+    <h2>Light Model</h2>
+    <p>The GetPoleModel API allows users to retrieve hardware information based on the model details</p>
+        <code>base_url/api/GetPoleModel?ModelName=<code>Model Name</code>  &token=<code>Token key</code>
+       <table class="table table-bordered">
+					  <thead class="thead-dark">
+					    <tr>
+					      <th scope="col">Function</th>
+					      <th scope="col">Input </th>
+					      <th scope="col">Return</th>
+					    </tr>
+					  </thead>
+					  <tbody>
+					    <tr>
+					      <td><code>base_url/api/GetPoleModel?ModelName=Model Name&token=Token</code></td>
+						    <td>Model Name,</br>
+							token
+						</td>
+					      <td>ModelInfo</td>
+					    </tr>
+            </tbody>
+       </table>
+						  
+        <h5>Example:</h5> <br>
+        <h6>Input:  <a href="https://streetleaf.azurewebsites.net/api/GetPolesList?Projectid=projectid&token=token">https://streetleaf.azurewebsites.net/api/GetPolesList?Projectid=projectid&token=token</a></h6>
+        
+          <h6>Return :</h6>
         <pre><code class="html">JSON RESPONSE
          
     [
