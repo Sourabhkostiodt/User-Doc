@@ -379,10 +379,31 @@
   <!-- Navbar
   ============================ -->
       <section id="idocs_navbar">
-        <h2>Get Projects List</h2>
-        <p>In Azure trigger are method where we and write a code and write our development logic's to implement & GET ,POST our data using it . <a class="ml-1" target="_blank" href="https://docs.microsoft.com/en-us/azure/azure-functions/functions-triggers-bindings?tabs=csharp"><i class="fas fa-external-link-alt"></i> Azure trigger</a></p>
-        <p>Using this trigger we get access to token for get all api data .</p>
-        <p><li><code>base_url/api/GetProjectsList?token=<code>Token key</code></code> - Get Project List according to User's  </li></p>
+        <h2>List of Projects</h2>
+        <p>IThe GetProjectsList API allows users to retrieve the list of Projects they will be able to access with their account along with the ID of said projects. ProjectIDs will be used in other API calls to retrieve further information.</p>
+        <table class="table table-bordered">
+					  <thead class="thead-dark">
+					    <tr>
+					      <th scope="col">Function</th>
+					      <th scope="col">Input </th>
+					      <th scope="col">Return</th>
+					    </tr>
+					  </thead>
+					  <tbody>
+					    <tr>
+					      <td><code>base_url/api/GetProjectsList?token=Token key</code></td>
+						<td>token 
+						</td>
+					      <td>Return Entire Project List including Project IDs</td>
+					    </tr>
+            </tbody>
+       </table>
+						  
+        <h5>Example:</h5> <br>
+        <h6>Input:  <a href="https://streetleaf.azurewebsites.net/api/GetProjectList?token=token">https://streetleaf.azurewebsites.net/api/GetProjectList?token=token</a></h6>
+        
+          <h6>Return :</h6>
+       
         <pre><code class="html">JSON RESPONSE
                
       [
