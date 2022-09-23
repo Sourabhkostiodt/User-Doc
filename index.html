@@ -177,15 +177,43 @@
 <!--     <li><code>base_url/api/trigger</code> - Contains all of the assets referenced -->
       <ul>
 	      <table>
-		      <tr><td> <li><code>base_url/api/Login</code></td> <td> Username ,Password</td><td>Returns User Login info and token</td> </li></tr>
-                <li><code>base_url/api/GetProjectsList</code> - Get Project List</li>
+			  <thead>
+			    <tr>
+			      <th>Function</th>
+			      <th>Input </th>
+			      <th>Return</th>
+			    </tr>
+			   </thead>
+			   <tbody>
+			     <tr>
+			       <td>base_url/api/trigger</td>
+			       <td>N/A</td>
+			       <td>Contains all assets referenced</td>
+			     </tr>
+			     <tr>
+			       <td><code>base_url/api/Login</code></td>
+			       <td>Username </br> Password</td>
+			       <td>Returns User Login info and token</td>
+			     </tr>
+			     <tr>
+			       <td><code>base_url/api/GetProjectsList</code></td>
+			       <td>token</td>
+			       <td>Return Entire Project List including Project IDs</td>
+			     </tr>
+			     <tr>
+			     </tr>
+			  </tbody>
+	    </table>
+	      
+		
+                
                 <li><code>base_url/api/GetProjectsDetails</code> - Project Details</li>
 	         <li><code>base_url/api/GetPoleDetails</code> –  Poles Details.</li>			  
                 <li><code>base_url/api/GetPolesList</code> - Pole List</li>
 	       <li><code>base_url/api/GetPoleModel</code> - Single Pole Model</li>			  
                <li><code>base_url/api/GetCurrentReadings</code> - Single Poles Current Readings</li>
 	      <li><code>base_url/api/GetCurrentReadingsForAllPoles</code> - All Poles Current Readings</li>
-	      </table>	      
+	           
             </ul>
     </li>
 <!--     <li><code>base_url/api</code> - <a href="https://streetleaf.azurewebsites.net">Homepage</a> -->
