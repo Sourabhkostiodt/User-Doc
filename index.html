@@ -99,9 +99,9 @@
       <li class="nav-item"><a class="nav-link active" href="#idocs_start">Getting Started</a>
         <ul class="nav flex-column">
           <li class="nav-item"><a class="nav-link" href="#idocs_installation">API's & URL's</a></li>
-          <li class="nav-item"><a class="nav-link" href="#idocs_html_structure">Triggers</a></li>
-          <li class="nav-item"><a class="nav-link" href="#idocs_sass">Function App</a></li>
-          <li class="nav-item"><a class="nav-link" href="#idocs_color_schemes">Server Less API's</a></li>
+		<li class="nav-item"><a class="nav-link" href="#idocs_html_structure">Functions</a></li>
+		<li class="nav-item"><a class="nav-link" href="#idocs_html_structure1">Triggers</a></li>
+          <li class="nav-item"><a class="nav-link" href="#idocs_color_schemes">SAM</a></li>
           <!-- <li class="nav-item"><a class="nav-link" href="#idocs_theme_customization">Customization</a></li>
           <li class="nav-item"><a class="nav-link" href="#idocs_logo_settings">Logo Settings</a></li> -->
         </ul>
@@ -262,11 +262,33 @@
       
   <hr class="divider">
   
+
+
+
+      <section id="idocs_html_structure">
+        <h2What are Functions?</h2>
+        <p>In Azure, Functions are programmed to perform different and specific tasks. Functions often require input parameters to ensure the User is allowed to run said function and to return the correct information to the User.</p>
+        
+        <p class="alert alert-info">Functions often need specific Triggers to start </p>
+      </section>
+      
+  <hr class="divider">
+          
+  <!-- Sass
+  ============================ -->
+<!--       <section id="idocs_sass">
+        <h2>Function App</h2>
+        <p>Azure Function is a serverless compute service that enables user to run event-triggered code without having to provision or manage infrastructure. Being as a trigger-based service, it runs a script or piece of code in response to a variety of events. <code>Azure Function App</code></p>
+        <p><a class="popup-img" href="assets/images/img2.png"><img class="img-fluid border" src="assets/images/img2.png" alt=""></a></p>
+      </section>
+
+ <hr class="divider"> -->
       <!-- HTML Structure
   ============================ -->
-      <section id="idocs_html_structure">
-        <h2>What is Triggers</h2>
-        <p>In Azure trigger are method where we and write a code and write our development logic's to implement & GET ,POST our data using it . <a class="ml-1" target="_blank" href="https://docs.microsoft.com/en-us/azure/azure-functions/functions-triggers-bindings?tabs=csharp"><i class="fas fa-external-link-alt"></i> Azure trigger</a></p>
+      <section id="idocs_html_structure1">
+        <h2>What are Triggers?</h2>
+        <p>In Azure a “trigger” is a function that, in the case of our API, needs a GET or POST method to activate. Once a GET with correct data has been sent to our server, the server will reply to the GET function with the relative data requested.</p>
+	      <p>Here is an example of a <b>https://streetleaf.azurewebsites.net/api/login</b>function reply:</p>   
         <pre><code class="html">JSON RESPONSE
          
           
@@ -282,26 +304,18 @@
 
 
 </code></pre>
-        <p class="alert alert-info">If you need more information, please visit Azure site: <a target="_blank" href="https://azure.com">Azure</a></p>
+        <p class="alert alert-info">For more information, please visit: <a target="_blank" href="https://azure.com">Triggers and bindings in Azure Functions | Microsoft Learn</a></p>
       </section>
       
-  <hr class="divider">
-          
-  <!-- Sass
-  ============================ -->
-      <section id="idocs_sass">
-        <h2>Function App</h2>
-        <p>Azure Function is a serverless compute service that enables user to run event-triggered code without having to provision or manage infrastructure. Being as a trigger-based service, it runs a script or piece of code in response to a variety of events. <code>Azure Function App</code></p>
-        <p><a class="popup-img" href="assets/images/img2.png"><img class="img-fluid border" src="assets/images/img2.png" alt=""></a></p>
-      </section>
+ 
       
   <hr class="divider">
   
   <!-- Color Schemes
   ============================ -->
       <section id="idocs_color_schemes">
-        <h2>Server Less API's</h2>
-        <p>SAM is a tool for creating, updating, and managing serverless applications and all the resources needed for the application to operate. AWS SAM lets you automate the process of creating required services for your applications instead of creating them one by one on AWS console.</p>
+        <h2>What is SAM?</h2>
+        <p>Serverless Application in Model (SAM) is a AWS open source framework dedicated to building applications. The strength in SAM is that it can intercept requests by the end user and allocate dynamic server use to deliver the response request by the User.</p>
         <!-- <ul>
 
 &lt;/head&gt;</code></pre>-->
