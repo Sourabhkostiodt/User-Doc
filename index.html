@@ -266,10 +266,10 @@
 
 
       <section id="idocs_html_structure">
-        <h2What are Functions?</h2>
+        <h2>What are Functions?</h2>
         <p>In Azure, Functions are programmed to perform different and specific tasks. Functions often require input parameters to ensure the User is allowed to run said function and to return the correct information to the User.</p>
         
-        <p class="alert alert-info">Functions often need specific Triggers to start </p>
+        <p>Functions often need specific Triggers to start </p>
       </section>
       
   <hr class="divider">
@@ -277,13 +277,7 @@
   <!-- Sass
   ============================ -->
 <!--       <section id="idocs_sass">
-        <h2>Function App</h2>
-        <p>Azure Function is a serverless compute service that enables user to run event-triggered code without having to provision or manage infrastructure. Being as a trigger-based service, it runs a script or piece of code in response to a variety of events. <code>Azure Function App</code></p>
-        <p><a class="popup-img" href="assets/images/img2.png"><img class="img-fluid border" src="assets/images/img2.png" alt=""></a></p>
-      </section>
-
- <hr class="divider"> -->
-      <!-- HTML Structure
+ 
   ============================ -->
       <section id="idocs_html_structure1">
         <h2>What are Triggers?</h2>
@@ -316,9 +310,7 @@
       <section id="idocs_color_schemes">
         <h2>What is SAM?</h2>
         <p>Serverless Application in Model (SAM) is a AWS open source framework dedicated to building applications. The strength in SAM is that it can intercept requests by the end user and allocate dynamic server use to deliver the response request by the User.</p>
-        <!-- <ul>
-
-&lt;/head&gt;</code></pre>-->
+     
       </section> 
       
   <hr class="divider">
@@ -329,7 +321,7 @@
   ============================ -->
       <section id="idocs_layout">
         <h2>All Triggers</h2>
-        <p class="lead mb-5">Documentation have all trigger which we use in project</p>
+        <p class="lead mb-5">Detailed description of all Triggers in this API</p>
       </section>
   
   
@@ -337,9 +329,32 @@
   ============================ -->
       <section id="idocs_header">
         <h2>Streetleaf Login</h2>
-        <p>In Azure trigger are method where we and write a code and write our development logic's to implement & GET ,POST our data using it . <a class="ml-1" target="_blank" href="https://docs.microsoft.com/en-us/azure/azure-functions/functions-triggers-bindings?tabs=csharp"><i class="fas fa-external-link-alt"></i> Azure trigger</a></p>
-        <p>Using this trigger we get access to token for get all api data .</p>
-        <p><li><code>base_url/api/Login?name=<code> First Name </code>&password=<code> password </code></code> - Login Users </li></p>
+        <p>The Login API allows users to retrieve what Token is associated with their account.Tokens are really important and need to be passed at every request except for the Login info
+</p>
+	      
+	      <table class="table table-dark">
+					  <thead>
+					    <tr>
+					      <th scope="col">Function</th>
+					      <th scope="col">Input </th>
+					      <th scope="col">Return</th>
+					    </tr>
+					  </thead>
+					  <tbody>
+					    <tr>
+					      <td><code>base_url/api/Login?name=First Name &password= password</code></td>
+						    <td>Username </br>
+						Password
+						</td>
+					      <td>Returns User Login info and token</td>
+					    </tr>
+            </tbody>
+       </table>
+						  
+        <p>Example:</p> <br>
+        <p>Input:</p> <br>
+        <a href="https://streetleaf.azurewebsites.net/api/Login?Name=name&password=password">https://streetleaf.azurewebsites.net/api/Login?Name=name&password=password</a>
+          <p>Return :</p> <br>
         <pre><code class="html">JSON RESPONSE
          
           
