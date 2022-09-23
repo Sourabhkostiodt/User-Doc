@@ -119,23 +119,6 @@
         </ul>
       </li>
       <!-- <li class="nav-item"><a class="nav-link" href="#idocs_content">Azure</a>
-    <ul class="nav flex-column">
-          <li class="nav-item"><a class="nav-link" href="#idocs_typography">Using azure for Function app</a></li>
-          <li class="nav-item"><a class="nav-link" href="#idocs_code">API management</a></li>
-          <li class="nav-item"><a class="nav-link" href="#idocs_table">Trigger in API management</a></li>
-    <!-- <li class="nav-item"><a class="nav-link" href="#idocs_icons">Icons</a></li>
-          <li class="nav-item"><a class="nav-link" href="#idocs_image">Image</a></li>
-    <li class="nav-item"><a class="nav-link" href="#idocs_video">Video</a></li> -->
-        <!-- </ul>
-  </li> -->
-      <!-- <li class="nav-item"><a class="nav-link" href="#idocs_components">Components</a>
-        <ul class="nav flex-column">
-          <li class="nav-item"><a class="nav-link" href="#idocs_accordion">Accordion</a></li>
-          <li class="nav-item"><a class="nav-link" href="#idocs_tabs">Tabs</a></li>
-          <li class="nav-item"><a class="nav-link" href="#idocs_social_icon">Social Icon</a></li>
-          <li class="nav-item"><a class="nav-link" href="#idocs_helper_classes">Helper Classes</a></li>
-        </ul>
-      </li> -->
   <!-- <li class="nav-item"><a class="nav-link" href="#idocs_faq">FAQ</a></li> -->
       <li class="nav-item"><a class="nav-link" href="#idocs_source_credits">Source & Credits</a></li>
       <li class="nav-item"><a class="nav-link" href="#idocs_support">Support</a></li>
@@ -158,8 +141,8 @@
   ============================ -->
       <section id="idocs_start">
       <h1>StreetLeaf API Documentation</h1>
-      <h4>StreetLeaf API's Using Azure Function Apps</h4>
-      <p class="lead">Here we are using <b>azure function</b> app and triggers for create apis for data.</p>
+      <h4>Streetleaf API data retrieval, for internal use only.</h4>
+      <p class="lead">Streetleaf API uses <b>Azure functions</b> to generate the API calls for clients or other apps.</p>
   <hr>
   <div class="row">
     <div class="col-sm-6 col-lg-4">
@@ -175,7 +158,7 @@
       </ul>
     </div>
   </div>
-      <p class="alert alert-info">If you have any questions that are beyond the scope of this help file, Please feel free to email via <a target="_blank" href="mailto:giorgio@streetleaf.com">Streetleaf Tech Support</a>.</p>
+      <p class="alert alert-info">If you have any questions beyond the scope of this file, <a target="_blank" href="mailto:giorgio@streetleaf.com">Contact Streetleaf Tech Support</a>.</p>
       </section>
       
   <hr class="divider">
@@ -183,15 +166,18 @@
       <!-- Installation
   ============================ -->
       <section id="idocs_installation">
-        <h2>API's & URL's</h2>
-        <p class="lead">Follow all are our apis which is associate with azure functions triggers:</p>
+        <h2>API's and URL's</h2>
+        <p class="lead">Below is a list of all APIs associated with a Azure Trigger function:</p>
         <ol>
-          <li>Start apis with base url currently here our <i>base url</i>  <strong>https://streetleaf.azurewebsites.net</strong> after the base url we are using <b>api</b> prefix .</li>
-          <li>after base_url & prefix we are using AZURE Function trigger name for example <code>Login</code> this trigger for login users  :
+          <li>All APIs start with the same base_url </i>  <strong>https://streetleaf.azurewebsites.net</strong> .</li>
+	   <li>Following the base_url the /api/ prefix is required.</li>
+          <li>Following the prefix insert any of the triggers below to get the following function:
+              *you must add ? between the function and input:
           <ul>
-    <li><code>base_url/api/trigger</code> - Contains all of the assets referenced
+<!--     <li><code>base_url/api/trigger</code> - Contains all of the assets referenced -->
       <ul>
-              <li><code>base_url/api/Login</code> - Login Users </li>
+	      <table>
+		      <tr><td> <li><code>base_url/api/Login</code></td> <td> Username ,Password</td><td>Returns User Login info and token</td> </li></tr>
                 <li><code>base_url/api/GetProjectsList</code> - Get Project List</li>
                 <li><code>base_url/api/GetProjectsDetails</code> - Project Details</li>
 	         <li><code>base_url/api/GetPoleDetails</code> –  Poles Details.</li>			  
@@ -199,6 +185,7 @@
 	       <li><code>base_url/api/GetPoleModel</code> - Single Pole Model</li>			  
                <li><code>base_url/api/GetCurrentReadings</code> - Single Poles Current Readings</li>
 	      <li><code>base_url/api/GetCurrentReadingsForAllPoles</code> - All Poles Current Readings</li>
+	      </table>	      
             </ul>
     </li>
 <!--     <li><code>base_url/api</code> - <a href="https://streetleaf.azurewebsites.net">Homepage</a> -->
